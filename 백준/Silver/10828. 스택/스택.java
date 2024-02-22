@@ -52,3 +52,58 @@ public class Main {
 		}
 	}
 }
+
+//import java.io.BufferedReader;
+//import java.io.BufferedWriter;
+//import java.io.IOException;
+//import java.io.InputStreamReader;
+//import java.io.OutputStreamWriter;
+//import java.util.Stack;
+//
+//public class Main {
+//    public static void main(String[] args) throws IOException {
+//
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+//        
+//        int line = Integer.parseInt(br.readLine());
+//        Stack<Integer> stack = new Stack<>();
+//                String input_strs[];
+//  
+//        for (int i = 0; i < line; i++) {
+//
+//            input_strs= br.readLine().split(" ");
+//            String input = input_strs[0];
+//            if (input.equals("push")) {
+//                int c = Integer.parseInt(input_strs[1]); 
+//                stack.push(c);
+//            } 
+//            else if (input.equals("pop")) {
+//                if (stack.isEmpty()) {
+//                    System.out.println("-1");
+//                } 
+//                else
+//                    System.out.println(stack.pop());
+//            } 
+//            else if (input.equals("size")) {
+//                System.out.println(stack.size());
+//            } 
+//            else if (input.equals("empty")) {
+//                if (stack.isEmpty()) {
+//                    System.out.println("1");
+//                } 
+//                else {
+//                    System.out.println("0");
+//                }
+//            } 
+//            else if (input.equals("top")) {
+//                if (stack.isEmpty()) {
+//                    System.out.println("-1");
+//                } 
+//                else
+//                    System.out.println(stack.peek());
+//            }
+//
+//        }
+//    }
+//}
