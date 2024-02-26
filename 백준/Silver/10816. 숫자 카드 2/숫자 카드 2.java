@@ -20,12 +20,8 @@ public class Main{
 
 		HashMap<String, Integer> map = new HashMap<>();
 
-		int[] input_num = new int[numCount];
-		int[] compare_num = new int[numCount2];
-		int cnt = 0;
 
 		for (int i = 0; i < numCount; i++) {
-//			input_num[i] = Integer.parseInt(input_str[i]);
 			String key = input_str[i];
 			int value = map.getOrDefault(key, 0);
 			map.put(key, value + 1);
