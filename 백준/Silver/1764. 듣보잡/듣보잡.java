@@ -14,31 +14,32 @@ public class Main {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		List<String> list = new ArrayList<>();
 		List<String> list2 = new ArrayList<>();
-		
+
 		String first_line[] = br.readLine().split(" ");
 		int hearLine = Integer.parseInt(first_line[0]); // 3
 		int seeLine = Integer.parseInt(first_line[1]); // 4
 
-		int cnt = 0;
 		for (int i = 0; i < hearLine; i++) {
-			list2.add(br.readLine());
+			list.add(br.readLine());
 		}
-		
-		Collections.sort(list2);
+
+		Collections.sort(list);
+
+		String[] name = new String[seeLine];
 		
 		for (int i = 0; i < seeLine; i++) {
-			String temp=br.readLine();
-			if(Collections.binarySearch(list2, temp)>=0) {
-				list.add(temp);
+			name[i] = br.readLine();
+			if (Collections.binarySearch(list, name[i]) >= 0) {
+				list2.add(name[i]);
 			}
 		}
 		StringBuilder sb = new StringBuilder();
-		
-		sb.append(list.size()+"\n");
-		
-		Collections.sort(list);
-		for (String answer : list) {
-			sb.append(answer+"\n");
+
+		sb.append(list2.size() + "\n");
+
+		Collections.sort(list2);
+		for (String answer : list2) {
+			sb.append(answer + "\n");
 		}
 		bw.write(sb.toString());
 
