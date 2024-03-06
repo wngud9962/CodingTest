@@ -38,8 +38,6 @@ public class Main {
 
 		String[] input = new String[line];
 		int input_num[] = new int[line];
-//		int input_abs[] = new int[line];
-		int zeroCnt = 0;
 
 		for (int i = 0; i < line; i++) {
 			input[i] = br.readLine();
