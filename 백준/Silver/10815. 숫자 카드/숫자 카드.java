@@ -58,7 +58,7 @@ public class Main {
 //import java.util.Arrays;
 //import java.util.StringTokenizer;
 //
-//public class Ex {
+//public class Main {
 //	public static void main(String[] args) throws Exception {
 //
 //		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
