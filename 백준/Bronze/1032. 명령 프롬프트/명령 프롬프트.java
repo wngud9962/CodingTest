@@ -7,6 +7,7 @@ import java.util.StringTokenizer;
 
 public class Main {
 	public static void main(String[] args) throws Exception {
+		//
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
@@ -21,7 +22,7 @@ public class Main {
 		boolean same = true;
 		
 		for (int i = 0; i < input_str[0].length(); i++) {
-			for (int j = 0; j < line; j++) {
+			for (int j = 1; j < line; j++) {
 				if(input_str[0].charAt(i) != input_str[j].charAt(i)) {
 					same = false;
 					break;
@@ -35,9 +36,10 @@ public class Main {
 				bw.write("?");
 				
 				if (same == true) same = false;
-				else same = true; 
+				else same = true;
 			}
 		}
+		
 
 		br.close();
 		bw.close();
