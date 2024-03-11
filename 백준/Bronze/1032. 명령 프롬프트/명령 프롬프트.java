@@ -7,7 +7,6 @@ import java.util.StringTokenizer;
 
 public class Main {
 	public static void main(String[] args) throws Exception {
-		//
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
@@ -45,3 +44,35 @@ public class Main {
 		bw.close();
 	}
 }
+// import java.io.BufferedReader;
+// import java.io.BufferedWriter;
+// import java.io.InputStreamReader;
+// import java.io.OutputStreamWriter;
+// import java.util.PriorityQueue;
+// import java.util.StringTokenizer;
+
+// public class Main {
+// 	public static void main(String[] args) throws Exception {
+// 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+// 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+// 		int line = Integer.parseInt(br.readLine());
+
+// 		char input_str[] = br.readLine().toCharArray();
+
+// 		for (int i = 0; i < line - 1; i++) {
+// 			char compare[] = br.readLine().toCharArray();
+
+// 			for (int j = 0; j < input_str.length; j++) {
+// 				if (input_str[j] != compare[j]) {
+// 					input_str[j] = '?';
+// 				}
+// 			}
+// 		}
+
+// 		System.out.print(input_str);
+
+// 		br.close();
+// 		bw.close();
+// 	}
+// }
