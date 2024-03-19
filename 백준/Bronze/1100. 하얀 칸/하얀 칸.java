@@ -11,27 +11,23 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-		boolean even = true;
 		int white = 0;
 
-		for (int i = 0; i < 8; i++) {
+		for (int i = 1; i <= 8; i++) {
 			String input = br.readLine();
-			for (int j = 0; j < 8; j++) {
-				if (even && j % 2 == 0) {
-					if (input.charAt(j) == 'F') {
-						white++;
-					}
+
+			if (i % 2 == 1) { // 홀수 줄(흰색 먼저)
+				for (int j = 0; j <= 6; j += 2) {
+					if(input.charAt(j)=='F') white++;
 				}
-					else if (!even && j % 2 == 1) {
-						if (input.charAt(j) == 'F') {
-							white++;
-						}
-					}
+			}
+			else {
+				for (int j = 1; j <= 7; j+=2) {
+					if(input.charAt(j)=='F') white++;
 				}
-			
-			even = !even;
+			}
 		}
-		bw.write(white+"");
+		bw.write(white + "");
 
 		br.close();
 		bw.close();
