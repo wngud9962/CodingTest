@@ -16,7 +16,7 @@ public class Main {
 		
 		for (int i = 0; i < input[0].length(); i++) {
 			for (int j = 0; j < input[1].length(); j++) {
-				res += Integer.parseInt(input[0].charAt(i)+"")*Integer.parseInt(input[1].charAt(j)+"");
+				res += (input[0].charAt(i)-'0') * (input[1].charAt(j)-'0');
 			}
 		}
 		bw.write(res+"");
