@@ -8,17 +8,17 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-		int num = Integer.parseInt(br.readLine());
+		int input = Integer.parseInt(br.readLine());
 
 		int minMove = 0;
 
-		if (num == 1) {
+		if (input == 1) {
 			minMove = 1;
 		}
 
 		else {
-			while (num > 1) {
-				num = num - (6 * minMove);
+			while (input > 1) {
+				input = input - (6 * minMove);
 				minMove++;
 			}
 		}
