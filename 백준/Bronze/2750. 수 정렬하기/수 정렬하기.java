@@ -25,10 +25,6 @@ public class Main {
 		Set<Integer> s = new HashSet<>();
 		List<Integer> list = Arrays.asList(input);
 		List<Integer> list1 = new ArrayList<>();
-//		int[] resArr = new int[line];
-//		for (int i = 0; i < line; i++) {
-//			s.add(input[i]);
-//		}
 		
 		s.addAll(list);
 		list1.addAll(s);
