@@ -7,17 +7,14 @@ public class Main {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		
-		String input="";
 
-		while((input = br.readLine()) != null) {
-			if(input.isBlank()) {
-				break;
-			}
+		String input;
+
+		while ((input = br.readLine()) != null) {
 			bw.write(input);
 			bw.newLine();
 		}
-		
+
 		br.close();
 		bw.close();
 	}
