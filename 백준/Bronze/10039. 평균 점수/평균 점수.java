@@ -11,28 +11,12 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-		String score_str[] = new String[5];
 		int sum = 0;
-
-		for (int i = 0; i < score_str.length; i++) {
-			score_str[i] = br.readLine();
-		}
-		
-		int score_num[] = new int[score_str.length];
-		
-		for (int i = 0; i < score_str.length; i++) {
-			score_num[i] = Integer.parseInt(score_str[i]);
+		for (int i = 0; i < 5; i++) {
+			int score = Integer.parseInt(br.readLine());
+			sum += score < 40 ? 40 : score;
 		}
 
-		for (int i = 0; i < score_num.length; i++) {
-			if (score_num[i] < 40)
-				score_num[i] = 40;
-		}
-
-		for (int res : score_num) {
-			sum += res;
-		}
-		
 		bw.write((sum / 5) + "");
 
 		br.close();
