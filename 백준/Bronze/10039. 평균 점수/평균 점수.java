@@ -12,12 +12,14 @@ public class Main {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
 		String score_str[] = new String[5];
-		int sum = 0, avg = 0;
+		int sum = 0;
 
 		for (int i = 0; i < score_str.length; i++) {
 			score_str[i] = br.readLine();
 		}
+		
 		int score_num[] = new int[score_str.length];
+		
 		for (int i = 0; i < score_str.length; i++) {
 			score_num[i] = Integer.parseInt(score_str[i]);
 		}
@@ -30,9 +32,8 @@ public class Main {
 		for (int res : score_num) {
 			sum += res;
 		}
-		avg = sum / score_num.length;
-
-		bw.write(avg + "");
+		
+		bw.write((sum / 5) + "");
 
 		br.close();
 		bw.close();
