@@ -3,9 +3,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.Set;
 import java.util.StringTokenizer;
-import java.util.TreeSet;
 
 public class Main {
 	public static void main(String[] args) throws Exception {
@@ -17,8 +15,9 @@ public class Main {
 
 		for (int i = 0; i < line; i++) {
 			st = new StringTokenizer(br.readLine(), ",");
-			int sum = Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken());
-			bw.write(sum + "");
+			int A = Integer.parseInt(st.nextToken());
+			int B = Integer.parseInt(st.nextToken());
+			bw.write(A + B + "");
 			bw.newLine();
 		}
 
