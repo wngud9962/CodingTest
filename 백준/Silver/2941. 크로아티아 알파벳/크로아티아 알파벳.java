@@ -12,7 +12,6 @@ public class Main {
 
 		String input = br.readLine();
 		String[] alpha = { "c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z=" };
-		int cnt = 0;
 		
 		for (int i = 0; i < alpha.length; i++) {
 			input = input.replace(alpha[i], "1");
