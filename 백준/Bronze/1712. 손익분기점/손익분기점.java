@@ -16,9 +16,19 @@ public class Main {
 		// A 고정비용
 		// B 하나당 가변비용
 		// C 노트북 가격
-		// (C x 갯수) > A + (B x 갯수) 시점
+		// (C x 갯수) = A + (B x 갯수) 시점 +1개
+		
+		/* 
+		 (C x 갯수) - (B x 갯수) = A 
+		 (C - B) x 갯수 = A
+		 갯수 = A / (C - B)
+		 
+		 손익분기 시점: A / (C - B) + 1 
+		*/
+		
 
 		StringTokenizer st = new StringTokenizer(br.readLine());
+		int cnt = 1;
 
 		int A = Integer.parseInt(st.nextToken());
 		int B = Integer.parseInt(st.nextToken());
