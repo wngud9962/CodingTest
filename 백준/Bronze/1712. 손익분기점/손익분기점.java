@@ -19,7 +19,6 @@ public class Main {
 		// (C x 갯수) > A + (B x 갯수) 시점
 
 		StringTokenizer st = new StringTokenizer(br.readLine());
-		int cnt = 1;
 
 		int A = Integer.parseInt(st.nextToken());
 		int B = Integer.parseInt(st.nextToken());
