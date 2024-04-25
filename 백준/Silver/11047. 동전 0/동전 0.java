@@ -25,6 +25,9 @@ public class Main {
 
 		Arrays.sort(input, Comparator.reverseOrder()); // 내림차순
 
+		// Arrays.sort(input); // 오름차순 정렬
+		// Collections.reverse(Arrays.asList(input));
+
 		for (int i = 0; i < input.length; i++) {
 			cnt += (sum / input[i]);
 			sum = sum % input[i];
