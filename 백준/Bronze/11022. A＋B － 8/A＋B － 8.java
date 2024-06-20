@@ -1,23 +1,13 @@
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class Main {
-	public static void main(String[] args) throws Exception {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-		int count = Integer.parseInt(br.readLine());
-
-		int[] num = new int[count];
-
-		for (int i = 1; i <= count; i++) {
-			String[] input = br.readLine().split(" ");
-			int a = Integer.parseInt(input[0]);
-			int b = Integer.parseInt(input[1]);
-
-			int sum = a + b;
-
-			System.out.println("Case #" + i + ": "+a+" + "+b +" = "+ sum);
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		for(int i=1;i<=n;i++) {
+			int x = sc.nextInt();
+			int y = sc.nextInt();
+			System.out.printf("Case #%d: %d + %d = %d\n", i, x, y, (x+y));
 		}
-
-	}
+    }
 }
